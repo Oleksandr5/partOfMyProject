@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    overflow: auto;
+}
+#wrapper {
+    width: 90%; 
+    margin: 0 auto; 
+    background: #fff;
+}
+#header {
+    width: 100%;     
+    background: #000;
+    position: relative;
+}
+#basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.btn {
+    padding: 1vw 3vw;
+    background: #ff1a2c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 2vw;
+    font-family: "Open Sans";
+}
+.windowBasket {
+    width: 86%;
+    min-height: 49vw;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: #22191a;
+    margin: 0 auto;
+    display: none;    
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5vw 2%;
+}
+.btnbasket {
+    background: #228b22;
+    margin: 2vw;
+}
+.btnbasket:hover {
+    background: #ff8c00;
+}
+.divButtons {
+    margin-top: 26vw;
+}
+.btnBuy {
+    margin-top: 1vw;
+}
+.btnBuy:hover {
+    background: #ff8c00;
+}
+.buy {
+    width: 100%;    
+}
+.place {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 97%;
+    position: absolute;
+    top: 1vw;
+    padding-right: 10vw;
+    padding-left: 1vw; 
+}
+.buy .wine {
+    margin-bottom: 3vw;
+    margin-right: 3vw;
+}
+.readMore:hover {
+    background: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+h4 {
+    color: #ff1a2c;
+    font-size: 6vw;
+    font-family: "Great Vibes";
+    text-align: center;    
+}
+h2 {
+    font-size: 10vw;
+    font-family: 'Fjalla One';
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+p {
+    font-size: 1vw;
+    font-family: "Open Sans";
+    line-height: 2vw;
+}
+
+.tasting h2 {
+    color: #fff;
+}
+.btnRead:hover, .btnLoadMore:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+.tasting {
+    padding: 2vw 0;    
+    background: #22191a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.wine-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 0 auto; 
+    margin-top: 5vw;
+    margin-bottom: 3vw;    
+}
+.wine9, .wine10, .wine11, .wine12,.wine13, .wine14, .wine15, .wine16, .wine17 {
+    display: none;
+}
+.wine {
+    width: 20%;
+    margin-top: 12vw;
+    margin-right: 1vw;
+    margin-bottom: 1.3vw;
+}
+.wine img:hover {
+    cursor: pointer;
+    border: 0.2vw solid #fff;
+    opacity: 0.5;
+    z-index: -1;    
+}
+.wine img {
+    width: 100%;
+    height: 24vw;
+    object-fit: cover;
+}
+.wine p {
+    color: #fff;
+    font-size: 2vw;
+    line-height: 3vw;
+    font-family: 'Fjalla One';
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.divBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -14vw;    
+}
+.divBuy, #basket.toBasket{
+    display: block;
+}
+.basketBuy {
+    display: none;  
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+}
+.btnDelete {
+    display: none;  
+}
+.toBasket, #basket.divBuy {
+    display: block;
+}
+#wineFon {
+    width: 100vw;  
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;     
+}
+
+#basketFon {
+    width: 100vw;  
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none; 
+}
+.closeBasket {
+    position: absolute;
+    top: 1.5vw;
+    right: 1.5vw;
+    width: 2vw;
+    cursor: pointer;
+}
+.inform {
+    width: 80%;
+    height: 40vw;
+    background: #fff;
+    margin: 0 auto;
+    display: none;    
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3vw 2%;
+}
+.inform .close {
+    margin-top: -34vw;
+    width: 2vw;
+    cursor: pointer;
+}
+.blockWino {
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+}
+.imgWino {
+    width: 80%;
+    height: 100%;    
+}
+.informWino {
+    width: 100%;
+    height: 100%;
+    margin-left: 3vw;
+}
+.imgWino .img {    
+    height: 100%;
+    width: 100%;       
+}
+.imgWino img {
+    height: 100%;    
+    width: 100%;   
+    object-fit: cover;
+}
+.informWino h3 {
+    font-size: 3vw;
+    font-family: 'Fjalla One';
+    font-weight: 500;
+    line-height: 4vw;
+}
+.informWino p {
+    font-size: 2vw;
+    line-height: 3vw;
+    margin-top: 3vw;
+}
